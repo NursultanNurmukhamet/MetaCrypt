@@ -131,13 +131,15 @@ export function VaultPage() {
   const [decryptErr, setDecryptErr] = useState<string | null>(null);
 
   // Reset transient state whenever a different image (or none) is loaded.
+  // Editing metadata replaces `image.bytes`, but keeps `originalBytes`; do not
+  // clear the post-encryption download prompt after a successful write.
   useEffect(() => {
     setDecrypted(null);
     setDecryptErr(null);
     setDecryptPassword('');
     setEncryptMsg(null);
     setEncryptErr(null);
-  }, [image]);
+  }, [image?.originalBytes]);
 
   const envelope = parsed?.envelope ?? null;
   const canEmbed = image != null && (image.format === 'jpeg' || image.format === 'png');
