@@ -1,0 +1,285 @@
+{
+  "app": {
+    "name": "MetaCrypt",
+    "tagline": "Client-side metadata editor & encryption"
+  },
+  "nav": { "home": "Home", "editor": "Editor", "vault": "Vault" },
+  "common": {
+    "download": "Download",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "add": "Add",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "search": "Search",
+    "close": "Close",
+    "reset": "Reset",
+    "import": "Import",
+    "export": "Export",
+    "key": "Key",
+    "value": "Value",
+    "actions": "Actions",
+    "show": "Show",
+    "hide": "Hide",
+    "generate": "Generate",
+    "encrypt": "Encrypt",
+    "decrypt": "Decrypt",
+    "loading": "Loading…",
+    "optional": "optional",
+    "readOnly": "Read-only",
+    "closeImage": "Close image",
+    "resetEdits": "Reset edits",
+    "modified": "modified"
+  },
+  "theme": { "toggle": "Toggle dark / light theme" },
+  "lang": { "label": "Language" },
+  "dropzone": {
+    "title": "Drop image here",
+    "or": "or",
+    "browse": "Browse file",
+    "hint": "JPEG · PNG · WebP · GIF · TIFF — processed 100% locally",
+    "unsupported": "This file does not look like a supported image."
+  },
+  "home": {
+    "heroBadge": "100% client-side — nothing ever leaves your device",
+    "heroTitle": "Inspect, edit & encrypt image metadata",
+    "heroSubtitle": "The open-source EXIF / XMP / IPTC editor that runs entirely in your browser. View every hidden field, edit or wipe it, and optionally hide AES-256 encrypted records inside your images.",
+    "features": {
+      "local": {
+        "title": "Privacy first",
+        "desc": "No uploads, no cookies, no tracking. Files are processed in memory and never touch a server — there is no server."
+      },
+      "editor": {
+        "title": "Full metadata editor",
+        "desc": "EXIF, XMP with custom namespaces, IPTC and PNG text chunks. Edit, add, rename and delete any field."
+      },
+      "vault": {
+        "title": "Encrypted vault",
+        "desc": "Hide passwords, tokens or notes inside an image using AES-256-GCM and PBKDF2 — powered by the Web Crypto API."
+      },
+      "cleaner": {
+        "title": "One-click cleaner",
+        "desc": "Strip GPS location, camera info and every other trace in one click. Pixels are never recompressed."
+      },
+      "offline": {
+        "title": "Works offline",
+        "desc": "Installable PWA. After the first visit everything works with no internet connection at all."
+      },
+      "open": {
+        "title": "Open source",
+        "desc": "MIT-licensed and auditable. Verify yourself that nothing leaves your device."
+      }
+    },
+    "how": {
+      "title": "How it works",
+      "step1": "Drop an image — it is read directly into browser memory.",
+      "step2": "Inspect and edit metadata, clean it, or encrypt a secure record into it.",
+      "step3": "Download the result. The original pixels are copied byte-for-byte."
+    }
+  },
+  "editor": {
+    "noImageTitle": "No image loaded",
+    "noImageDesc": "Drop an image on the home page to inspect and edit its metadata.",
+    "goHome": "Go to upload",
+    "tabs": {
+      "overview": "Overview",
+      "exif": "EXIF",
+      "xmp": "XMP",
+      "iptc": "IPTC",
+      "png": "PNG text",
+      "raw": "RAW",
+      "cleaner": "Cleaner",
+      "export": "Export",
+      "compat": "Compatibility"
+    }
+  },
+  "overview": {
+    "image": "Image",
+    "fileName": "File name",
+    "size": "File size",
+    "resolution": "Resolution",
+    "format": "Format",
+    "colorSpace": "Color space",
+    "transparency": "Transparency",
+    "checksum": "SHA-256",
+    "metadataStatus": "Metadata status",
+    "tags": "{{count}} fields total",
+    "encryptedTitle": "Encrypted metadata detected",
+    "encryptedDesc": "This image contains a MetaCrypt secure record. Open the Vault to decrypt it.",
+    "openVault": "Open Vault",
+    "gps": "GPS location",
+    "gpsPresent": "Present — consider removing before sharing",
+    "gpsAbsent": "Not present",
+    "present": "present",
+    "absent": "none",
+    "created": "Encrypted on {{date}}",
+    "sections": {
+      "exif": "EXIF",
+      "xmp": "XMP",
+      "iptc": "IPTC",
+      "pngText": "PNG text",
+      "icc": "ICC profile"
+    }
+  },
+  "table": {
+    "searchPlaceholder": "Search fields…",
+    "noResults": "No fields match your search",
+    "addField": "Add field",
+    "invalidValue": "Invalid value for this field type",
+    "deleteAll": "Delete all",
+    "confirmDeleteAll": "Delete ALL fields in this section?"
+  },
+  "exif": {
+    "empty": "No EXIF data in this image.",
+    "readOnly": "EXIF editing is supported for JPEG files. For this format the data is shown read-only.",
+    "selectTag": "Select tag…"
+  },
+  "xmp": {
+    "empty": "No XMP packet in this image.",
+    "readOnly": "XMP editing is supported for JPEG and PNG files.",
+    "property": "Property",
+    "namespace": "Namespace",
+    "prefix": "Prefix",
+    "addProperty": "Add property",
+    "nsHint": "Custom namespaces are supported — e.g. https://example.com/ns/1.0/",
+    "vaultManaged": "This packet contains the MetaCrypt encrypted payload — manage it on the Vault page.",
+    "customNs": "Custom namespace…"
+  },
+  "iptc": {
+    "empty": "No IPTC data in this image.",
+    "readOnly": "IPTC editing is supported for JPEG files.",
+    "addField": "Add IPTC field",
+    "selectField": "Select field…",
+    "binary": "binary data"
+  },
+  "png": {
+    "empty": "No textual chunks in this PNG.",
+    "notPng": "PNG text chunks only exist in PNG files.",
+    "keyword": "Keyword",
+    "text": "Text",
+    "kind": "Chunk",
+    "addEntry": "Add entry",
+    "xmpNote": "The XMP packet (iTXt · XML:com.adobe.xmp) is managed on the XMP tab."
+  },
+  "raw": {
+    "json": "JSON",
+    "xml": "XML",
+    "hex": "HEX",
+    "tree": "Tree",
+    "noXmp": "This image has no XMP packet.",
+    "hexShowing": "Showing first {{shown}} KB of {{total}} KB"
+  },
+  "cleaner": {
+    "title": "Metadata Cleaner",
+    "desc": "Remove selected metadata families. Pixels are copied byte-for-byte — no recompression, no quality loss.",
+    "options": {
+      "exif": "EXIF",
+      "xmp": "XMP",
+      "iptc": "IPTC",
+      "pngText": "PNG text chunks",
+      "comments": "Comments & misc",
+      "icc": "ICC color profile"
+    },
+    "iccWarning": "Removing the ICC profile can slightly change how colors are displayed.",
+    "vaultWarning": "Removing XMP will also destroy the MetaCrypt encrypted record stored in this image.",
+    "removeEverything": "Remove everything",
+    "clean": "Clean & apply",
+    "download": "Download cleaned image",
+    "unsupported": "Cleaning is supported for JPEG and PNG files.",
+    "result": "Done — size {{before}} → {{after}}"
+  },
+  "export": {
+    "title": "Export metadata",
+    "desc": "Save everything this image contains as a document.",
+    "importTitle": "Import metadata",
+    "importDesc": "Accepts MetaCrypt JSON or XML exports. Writable sections (XMP, PNG text) are applied to the image.",
+    "importBtn": "Import file",
+    "applied": "Imported: {{xmp}} XMP properties, {{png}} PNG entries",
+    "importError": "Could not read this file — expected a MetaCrypt JSON or XML export."
+  },
+  "compat": {
+    "title": "Compatibility checker",
+    "desc": "What happens to this image's metadata when it is shared through:",
+    "status": {
+      "preserved": "Metadata preserved",
+      "lost": "Metadata lost",
+      "partial": "Partially preserved"
+    },
+    "notes": {
+      "reencoded": "Re-encodes images on upload — all metadata is stripped.",
+      "passthrough": "Transfers the original file untouched."
+    },
+    "vaultDanger": "Your encrypted record would be destroyed",
+    "platforms": {
+      "telegramPhoto": "Telegram — photo",
+      "telegramFile": "Telegram — file",
+      "whatsapp": "WhatsApp — photo",
+      "whatsappDocument": "WhatsApp — document",
+      "discord": "Discord",
+      "googleDrive": "Google Drive",
+      "dropbox": "Dropbox",
+      "email": "Email attachment",
+      "instagram": "Instagram",
+      "slack": "Slack"
+    }
+  },
+  "vault": {
+    "title": "Secure Vault",
+    "desc": "Create a secure record, encrypt it with AES-256-GCM and hide it inside your image's metadata. Everything happens in your browser — the password and data never leave this device.",
+    "needImage": "Load an image first — the encrypted record is stored inside the image file itself.",
+    "loadForVault": "Drop an image to create a vault, or one that already contains a MetaCrypt record to decrypt it.",
+    "detectedTitle": "Encrypted metadata detected",
+    "detectedDesc": "Enter the password to decrypt the secure record stored in this image.",
+    "record": {
+      "legend": "Secure record",
+      "title": "Title",
+      "description": "Description",
+      "username": "Username",
+      "password": "Password",
+      "url": "URL",
+      "token": "Token",
+      "notes": "Notes",
+      "custom": "Custom fields",
+      "addCustom": "Add custom field",
+      "fieldName": "Field name",
+      "fieldValue": "Value"
+    },
+    "encryption": "Encryption",
+    "encryptionPassword": "Encryption password",
+    "confirm": "Confirm password",
+    "mismatch": "Passwords do not match",
+    "iterations": "PBKDF2 iterations",
+    "iterationsHint": "Higher is slower to brute-force. 600 000 is the recommended default.",
+    "algoNote": "AES-256-GCM · PBKDF2-SHA256 · random salt & IV · Web Crypto API",
+    "encryptBtn": "Encrypt into image",
+    "encrypted": "Record encrypted and embedded into the image. Download it to keep the result.",
+    "decryptBtn": "Decrypt",
+    "wrongPassword": "Could not decrypt. Check the password and try again.",
+    "decryptedTitle": "Decrypted record",
+    "hideRecord": "Hide record",
+    "removeRecord": "Remove encrypted record",
+    "removed": "Encrypted record removed from the image.",
+    "strength0": "Very weak",
+    "strength1": "Weak",
+    "strength2": "Fair",
+    "strength3": "Strong",
+    "strength4": "Very strong",
+    "entropy": "≈ {{bits}} bits of entropy",
+    "emptyRecord": "Fill in at least one field to encrypt.",
+    "unsupportedFormat": "Embedding requires a JPEG or PNG image."
+  },
+  "errors": {
+    "loadFailed": "Could not read this file.",
+    "writeFailed": "Could not write metadata: {{message}}",
+    "xmpTooLarge": "The XMP packet is too large to fit into a JPEG segment (64 KB max)."
+  },
+  "footer": {
+    "privacy": "Your files never leave this device.",
+    "tagline": "Open-source client-side metadata editor.",
+    "madeWith": "No backend · No uploads · No tracking"
+  },
+  "notFound": { "title": "Page not found", "goHome": "Back to home" }
+}
